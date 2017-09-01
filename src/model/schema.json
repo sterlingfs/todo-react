@@ -1,0 +1,55 @@
+{
+    "title": "/",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "user": "#/definitions/user",
+        "task": "#/definitions/task",
+        "project": "#/definitions/project | #/definitions/task"
+    },
+    "definitions": {
+        "user": {
+            "properties": {
+                "uid": "string",
+                "displayName": "string",
+                "photoUrl": "string",
+                "email": "string",
+                "dateCreated": "string"
+            },
+            "required": ["*"],
+            "additionalProperties": false
+        },
+        "task": {
+            "properties": {
+                "title": "string",
+                "note": "string",
+                "category": {
+                    "value": "INBOX | NEXT | ANYTIME | SOMEDAY | COMPLETE"
+                },
+                "project": "string",
+                "dateCreated": "string",
+                "dateStart": "string",
+                "dateDue": "string",
+                "dateComplete": "string",
+                "lastModified": "string"
+            },
+            "required": [],
+            "additionalProperties": false
+        },
+        "project": {
+            "properties": {
+                "title": "string",
+                "note": "string",
+                "project": "string",
+                "dateCreated": "string",
+                "dateStart": "string",
+                "dateDue": "string",
+                "dateComplete": "string",
+                "lastModified": "string",
+                "users": "[string]"
+            },
+            "required": [],
+            "additionalProperties": false
+        }
+    }
+}

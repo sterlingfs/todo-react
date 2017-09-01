@@ -1,0 +1,81 @@
+@import '../index.css';
+
+h2, h5 {
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  margin: 4px 0;
+  color: rgba(0, 0, 0, 0.54);
+}
+h5 span {
+  display: block;
+}
+.main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  box-sizing: border-box;  
+}
+.container {
+  background: white;
+  width: 320px;
+  height: 450px;
+  margin: 64px;
+  padding: 32px 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.54) 0 4px 12px -3px;
+}
+.signin-btn, .signin-input {
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  padding: 8px 16px;
+  font-size: 12px;
+}
+.signin-btn {
+  background: red;  
+  transition: 0.2s;  
+}
+.signin-btn:hover {
+  transform: scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.54) 0 4px 12px -3px;
+  transition: 0.2s;
+}
+.signin-btn:active {
+  transform: scale(0.99);
+  box-shadow: none;
+  transition: 0.2s;    
+}
+.signin-input {
+  color: rgba(0, 0, 0, 0.87);
+  background: rgba(0, 0, 0, 0.07);
+}
+.provider-btn {
+  background: dodgerblue;    
+}
+.seperator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.54);
+}
+.seperator div {
+  height: 1px;
+  flex: 1;
+  background: rgba(0, 0, 0, 0.54);
+}
+.seperator span {
+  font-size: 14px;
+  padding: 0 5px;
+}
+.demo-info {
+  font-size: 14px;
+}

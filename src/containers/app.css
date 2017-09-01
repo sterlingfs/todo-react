@@ -1,0 +1,10 @@
+:host {
+  --primary-color: blue;
+  --secondary-color: red;
+}
+
+html, body {
+  margin: 0;
+}
+
+.App {}

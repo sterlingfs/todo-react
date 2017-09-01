@@ -1,0 +1,8 @@
+@import '../index.css';
+
+.app-bar {
+  height: 64px;
+  width: 100vw;
+  /* background: blue; */
+  background: var(--primary-color);
+}
